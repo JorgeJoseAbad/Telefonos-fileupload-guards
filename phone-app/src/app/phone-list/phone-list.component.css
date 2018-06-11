@@ -1,4 +1,6 @@
-
+#phones{
+  float:left;
+}
 
 #phone-list{
   float: left;
@@ -13,6 +15,7 @@
 }
 
 #new-phone {
-clear:both;
-
+  clear: left;
+  margin-left: 50px;
+  padding-top: 40px;
 }
