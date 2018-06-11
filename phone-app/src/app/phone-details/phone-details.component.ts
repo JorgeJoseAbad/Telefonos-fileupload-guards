@@ -23,22 +23,24 @@ export class PhoneDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.data.subscribe((resolved) => {
+    /*this.route.data
+      .subscribe((resolved) => {
         this.phone = resolved['phone'];
         console.log(this.phone.image);
+      });*/
+    this.route.params
+      .subscribe(params => {
+        this.getPhoneDetails(params['id']);
       });
-    /*this.route.params.subscribe(params => {
-      this.getPhoneDetails(params['id']);
-    });*/
   }
 
-/*
+
   getPhoneDetails(id) {
     this.phoneService.get(id)
       .subscribe((phone) => {
         this.phone = phone;
       });
-  }*/
+  }
 
   deletePhone() {
   if (window.confirm('Are you sure?')) {

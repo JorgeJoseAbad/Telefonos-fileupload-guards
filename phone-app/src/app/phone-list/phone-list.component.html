@@ -6,12 +6,15 @@
 <a [routerLink]="['add']"> Add a new phone </a>
 incluyo esto por mi cuenta-->
 <h1> Phone list </h1>
-<div>
-  <div *ngFor="let phone of phones">
-    <img [src]="phone.image" />
-    <h3> {{ phone.name }}&nbsp;</h3>
-    <p> {{ phone.brand }} </p>
-    <a [routerLink]="['phone', phone._id]"> View Details </a>
-  </div>
-  <a [routerLink]="['add']">Add new Phone</a>
+<div id="phones">
+
+    <div id="phone-list" *ngFor="let phone of phones">
+      <img [src]="phone.image" />
+      <h3> {{ phone.name }}&nbsp;</h3>
+      <p> {{ phone.brand }} </p>
+      <a [routerLink]="['phone', phone._id]"> View Details </a>
+    </div>
+
+
+  <a id="new-phone" [routerLink]="['add']">Add new Phone</a>
 </div>

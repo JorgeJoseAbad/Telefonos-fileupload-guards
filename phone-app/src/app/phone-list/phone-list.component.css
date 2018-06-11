@@ -1,0 +1,18 @@
+
+
+#phone-list{
+  float: left;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+#phone-list img{
+  width: 200px;
+  height: auto;
+}
+
+#new-phone {
+clear:both;
+
+}

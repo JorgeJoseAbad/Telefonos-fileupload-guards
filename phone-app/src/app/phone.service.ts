@@ -10,7 +10,6 @@ export class PhoneService {
   getList() {
     return this.http.get(`${this.BASE_URL}/api/phones`)
       .map((res) => res.json());
-      
   }
 
   get(id) {

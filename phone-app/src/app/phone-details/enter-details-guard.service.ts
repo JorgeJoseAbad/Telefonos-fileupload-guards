@@ -7,8 +7,6 @@ import { Observable }  from 'rxjs/Rx';
 export class EnterDetailsGuardService implements CanActivate{
 
   canActivate(): Observable<boolean> | Promise<boolean> | boolean {
-    console.log('canActivate guard has been called');
-    debugger;
     return new Promise((resolve, reject) => {
       setTimeout(() => resolve(true), 1000);
     });
